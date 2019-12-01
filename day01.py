@@ -1,7 +1,5 @@
-import math
-
 def fuel_requirement(mass):
-    return math.floor(mass / 3) - 2
+    return mass // 3 - 2
 
 def full_fuel_requirement(mass):
     total_fuel = 0
@@ -11,11 +9,11 @@ def full_fuel_requirement(mass):
         fuel = fuel_requirement(fuel)
     return total_fuel
 
-def first_part():
+def part1():
     with open('res/day01.txt') as data:
         return sum(fuel_requirement(int(datum)) for datum in data)
 
-def second_part():
+def part2():
     with open('res/day01.txt') as data:
         return sum(full_fuel_requirement(int(datum)) for datum in data)
 
