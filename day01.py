@@ -18,5 +18,5 @@ def part2():
         return sum(full_fuel_requirement(int(datum)) for datum in data)
 
 if __name__ == '__main__':
-    print(first_part())
-    print(second_part())
+    print(part1())
+    print(part2())
